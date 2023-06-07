@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A1 | awk '{ printf "%s%s", $0, (NR == 1 ? "" : (/\/$/ ? "" : ", ")); } END { printf "\n"; }'
+(ls -A1 | awk '{ printf "%s%s", $0, (NR == 1 ? "" : (/\/$/ ? "" : ", ")) }'; echo)
