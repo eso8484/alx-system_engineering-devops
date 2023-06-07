@@ -1,3 +1,0 @@
-#!/bin/bash
-ls -A1 | awk '{ printf "%s%s", (NR>1?",":""), $0 } END { print "" }' | sort -d -k1.2 -k1
-
